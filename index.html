@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calendar-card">
+
+    <div class="header">
+
+      <button onclick="prevMonth()">
+        ←
+      </button>
+
+      <h1 id="monthYear"></h1>
+
+      <button onclick="nextMonth()">
+        →
+      </button>
+
+    </div>
+
+    <div class="days">
+
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+
+    </div>
+
+    <div id="calendar"></div>
+    <p id="selectedDateText">
+  No date selected
+</p>
+     <div class="reminder-box">
+
+  <input
+    type="text"
+    id="reminderInput"
+    placeholder="Write your schedule..."
+  >
+
+  <button onclick="saveReminder()">
+    Save Reminder
+  </button>
+
+</div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
